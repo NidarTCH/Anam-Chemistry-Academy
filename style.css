@@ -202,4 +202,12 @@ grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         width: unset;
     }
 }
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 9px 20px;
+    opacity: 0.7;
+}
+
 
