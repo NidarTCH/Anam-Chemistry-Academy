@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <link rel="stylesheet" href="style.css"/>
+    <title>aca</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="#">LOGO</a></div>
+        <ul class="links">
+            <li><a href="https://www.facebook.com/groups/anamchemistryacademy">Our Group</a></li>
+            <li><a href="https://www.youtube.com/@HasanAnam">YouTube</a></li>
+            <li><a href="#">Courses</a></li>
+        </ul>
+        <a href="#" class="action_btn">get started</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu">
+        <li><a href="https://www.facebook.com/groups/anamchemistryacademy">Our Group</a></li>
+        <li><a href="https://www.youtube.com/@HasanAnam">YouTube</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#" class="action_btn">get started</a></li>
+    </div>
+    </header>
+    <div class="wrapper">
+        <h1>Courses Below</h1>
+        <div class="conatiner">
+         <div class="box">
+         <img src="i.png">
+         <h3>দেখা হবে বিজয়ে</h3>
+         <p>Chemistry 1st paper </p>
+         <a href="#" class="btn">CLICK</a>
+         </div>
+         <div class="box">
+            <img src="i.png">
+            <h3>দেখা হবে বিজয়ে</h3>
+            <p>Chemistry 2nd paper </p>
+            <a href="#" class="btn">CLICK</a>
+            </div>
+            <div class="box">
+                <img src="i.png">
+                <h3>ব্যাচ প্রতীক্ষা</h3>
+                <p>HSC 24 Full Course </p>
+                <a href="#" class="btn">CLICK</a>
+                </div>
+                <div class="box">
+                    <img src="i.png">
+                    <h3>ব্যাচ আকাঙ্ক্ষা</h3>
+                    <p>Admission Batch HSC 23</p>
+                    <a href="#" class="btn">CLICK</a>
+                    </div>
+        </div>
+     </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const DropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            DropDownMenu.classList.toggle('open')
+            const isOpen = DropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
