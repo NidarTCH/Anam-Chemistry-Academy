@@ -140,7 +140,7 @@ grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 }
 
 .box img {
-    height: 70px;
+    height: 100px;
 }
 
 .box h3 {
